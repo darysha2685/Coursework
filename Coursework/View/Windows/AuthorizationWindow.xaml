@@ -1,0 +1,67 @@
+﻿<Window x:Class="Coursework.View.Windows.AuthorizationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Coursework.View.Windows"
+        mc:Ignorable="d"
+        Title="Окно авторизации" Height="650" Width="800"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Image Source="/Resource/ghvcdj/Авторизация.jpeg" Stretch="UniformToFill"/>
+        <Grid Width="450"
+              Height="550">
+            <Grid.Background>
+                <SolidColorBrush Color="#FFB2C1F6" Opacity="0.85"/>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="170" />
+                <RowDefinition Height="60" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="60" />
+                <RowDefinition Height="20" />
+                <RowDefinition Height="70" />
+                <RowDefinition Height="20" />
+                <RowDefinition Height="70" />
+                <RowDefinition Height="1*" />
+            </Grid.RowDefinitions>
+            <Image Source="C:\Users\user\source\repos\Coursework\Coursework\Resource\Icons\logo.png" />
+            <TextBox Name="LoginTB"
+                     Height="50"
+                     Width="350"
+                     Grid.Row="1"/>
+            <PasswordBox Name="PasswordPB"
+                     Height="50"
+                     Width="350"
+                     Grid.Row="3"/>
+            <Button Name="InputBtn"
+                    Grid.Row="5"
+                    Height="50"
+                    Width="250"
+                    Content="Войти" 
+                    FontSize="24"
+                    Background="#FF7649E0" 
+                    BorderBrush="#FF391191" 
+                    FontFamily="Times New Roman"
+                    Foreground="White"
+                    Click="InputBtn_Click"/>
+            <TextBlock Grid.Row="6"
+                       Text="или" 
+                       FontFamily="Times New Roman"
+                       FontSize="18"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"/>
+            <Button Name="RegistrBtn"
+                    Grid.Row="7"
+                    Height="50"
+                    Width="250"
+                    Content="Зарегистрироваться" 
+                    FontSize="24"
+                    Background="#FF7649E0" 
+                    BorderBrush="#FF391191" 
+                    FontFamily="Times New Roman"
+                    Foreground="White"
+                    Click="RegistrBtn_Click"/>
+        </Grid>
+    </Grid>
+</Window>
