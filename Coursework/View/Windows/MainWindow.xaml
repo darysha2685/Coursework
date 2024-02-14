@@ -5,11 +5,42 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Coursework"
         mc:Ignorable="d"
-        Title="MainWindow" 
+        Title="Главное окно" 
         Height="900" Width="1600"
-        MinHeight="762" MinWidth="1480"
+        MinHeight="720" MinWidth="1280"
+        MaxHeight="1080" MaxWidth="1920"
         WindowStartupLocation="CenterScreen">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <Grid Background="#FF8070E8">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20" />
+                <ColumnDefinition Width="250" />
+                <ColumnDefinition Width="1050" />
+                <ColumnDefinition Width="220.8" />
+                <ColumnDefinition Width="21.6" />
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="Меню"
+                       Name="MenuTB"
+                       Grid.Column="1"
+                       FontSize="26"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center" Height="34" Width="73" />
+            <Image Source="/Resource/Icons/logo.png" 
+                   Grid.Column="2"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center" Height="60" Width="113" />
+            <Image Source="/Resource/Icons/user.png" 
+                   Grid.Column="3"
+                   Height="50"
+                   Width="45"
+                   VerticalAlignment="Center"/>
+
+        </Grid>
+        <Frame Grid.Row="1"
+               Name="MainFrm"/>
     </Grid>
 </Window>

@@ -8,7 +8,7 @@
         Title="Окно авторизации" Height="650" Width="800"
         WindowStartupLocation="CenterScreen">
     <Grid>
-        <Image Source="/Resource/ghvcdj/Авторизация.jpeg" Stretch="UniformToFill"/>
+        <Image Source="/Resource/Fonts/Авторизация.jpeg" Stretch="UniformToFill"/>
         <Grid Width="450"
               Height="550">
             <Grid.Background>
