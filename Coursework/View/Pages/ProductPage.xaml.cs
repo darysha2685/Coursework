@@ -24,5 +24,20 @@ namespace Coursework.View.Pages
         {
             InitializeComponent();
         }
+
+        private void DTGrid_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void CategoryCmb_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void SearchTB_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

@@ -13,19 +13,34 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Coursework
+namespace Coursework.View.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для PageMenu.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class PageMenu : Page
     {
-        public MainWindow()
+        public PageMenu()
         {
             InitializeComponent();
         }
 
-        private void GoBackBtn_Click(object sender, RoutedEventArgs e)
+        private void HL1_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void HL2_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void HL3_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void HL4_Click(object sender, RoutedEventArgs e)
         {
 
         }

@@ -43,11 +43,8 @@
                     Height="50"
                     Width="250"
                     Content="Зарегистрироваться" 
-                    FontSize="24"
-                    Background="#FF7649E0" 
-                    BorderBrush="#FF391191" 
+                    FontSize="24" 
                     FontFamily="Times New Roman"
-                    Foreground="White"
                     Click="RegistrBtn_Click"/>
             </Grid>
         </Border>

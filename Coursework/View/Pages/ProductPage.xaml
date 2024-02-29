@@ -5,10 +5,45 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Coursework.View.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
-      Title="ProductPage">
+      d:DesignHeight="810" d:DesignWidth="1290"
+      Title="Главное меню">
 
-    <Grid>
+    <Grid >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="350" />
+        </Grid.ColumnDefinitions>
         
+        
+        <!--<!-Фильтр, поиск, товар->-->
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50" />
+                <RowDefinition Height="1*" />
+            </Grid.RowDefinitions>
+            <ComboBox Name="CategoryCmb"
+                      Width="450"
+                      HorizontalAlignment="Left"
+                      SelectionChanged="CategoryCmb_SelectionChanged"/>
+
+            <TextBox Name="SearchTB" 
+                     Width="450"
+                     HorizontalAlignment="Right"
+                     TextChanged="SearchTB_TextChanged"/>
+
+            <DataGrid Name="DTGrid" Loaded="DTGrid_Loaded" 
+                  VerticalAlignment="Top" Grid.Row="1">
+                <DataGrid.Columns>
+                    <DataGridTextColumn/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+        
+        <Grid Grid.Column="1" Margin="15 0 0 0 ">
+            <Grid.Background>
+                <SolidColorBrush Color="#FF988EF1" Opacity="0.75"/>
+            </Grid.Background>
+            
+        </Grid>
     </Grid>
 </Page>

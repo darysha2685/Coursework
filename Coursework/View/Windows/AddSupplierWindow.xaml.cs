@@ -10,22 +10,21 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Coursework
+namespace Coursework.View.Windows
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для AddSupplierWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class AddSupplierWindow : Window
     {
-        public MainWindow()
+        public AddSupplierWindow()
         {
             InitializeComponent();
         }
 
-        private void GoBackBtn_Click(object sender, RoutedEventArgs e)
+        private void AddBtn_Click(object sender, RoutedEventArgs e)
         {
 
         }

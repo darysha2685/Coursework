@@ -23,5 +23,10 @@ namespace Coursework.View.Windows
         {
             InitializeComponent();
         }
+
+        private void AddBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
