@@ -43,7 +43,38 @@
             <Grid.Background>
                 <SolidColorBrush Color="#FF988EF1" Opacity="0.75"/>
             </Grid.Background>
-            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height=".5*" />
+                <RowDefinition Height="50" />
+            </Grid.RowDefinitions>
+            <Button Name="AddProduct"
+                    Grid.Row="2"
+                    Content="Добавить товар"
+                    FontSize="26"
+                    Width="250"
+                    Height="80"/>
+
+            <Button Name="ExchProduct"
+                    Grid.Row="4"
+                    Content="Изменить товар"
+                    FontSize="26"
+                    Width="250"
+                    Height="80"/>
+
+            <Button Name="DelProduct"
+                    Grid.Row="6"
+                    Content="Удалить товар"
+                    FontSize="26"
+                    Width="250"
+                    Height="80"/>
         </Grid>
     </Grid>
 </Page>
